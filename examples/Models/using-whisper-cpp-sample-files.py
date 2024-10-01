@@ -28,7 +28,7 @@ from llmware.gguf_configs import GGUFConfigs
 from llmware.setup import Setup
 
 #   optional / to adjust various parameters of the model
-GGUFConfigs().set_config("whisper_cpp_verbose", "OFF")
+GGUFConfigs().set_config("whisper_cpp_verbose", "ON")
 GGUFConfigs().set_config("whisper_cpp_realtime_display", True)
 
 #   note: english is default output - change to 'es' | 'fr' | 'de' | 'it' ...
@@ -77,5 +77,5 @@ if __name__ == "__main__":
 
     # pick among the four examples: famous_quotes | greatest_speeches | youtube_demos | earnings_calls
 
-    sample_files(example="famous_quotes", small_only=False)
+    sample_files(example="famous_quotes", small_only=True)
 
